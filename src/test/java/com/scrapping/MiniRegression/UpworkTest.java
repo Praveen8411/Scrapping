@@ -31,6 +31,4 @@ public class UpworkTest extends TestBase {
 		up.searchFreeLancers(domainName);
 		up.storeData(domainName);
 	}
-	
-
 }

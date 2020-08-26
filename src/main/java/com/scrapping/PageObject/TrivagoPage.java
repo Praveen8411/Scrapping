@@ -23,7 +23,9 @@ public class TrivagoPage {
 
 	AppLibrary appLibrary;
 	boolean present;
-	File src = new File ("G:\\Repo\\auto-multisite\\TestData\\test01.xlsx");
+	String filePath = "TestData" + File.separator + "test3.xlsx";
+	String imagePath = "TestData" + File.separator + "Image";
+	File src = new File (filePath);
 	XSSFWorkbook wb = new XSSFWorkbook();
 	List<String> allNames=new ArrayList<>();
 	List<String> allRatings=new ArrayList<>();
@@ -99,7 +101,7 @@ public class TrivagoPage {
 	public void createExcelFile() throws Exception {
 		try {
 		XSSFWorkbook wb = new XSSFWorkbook();			
-		FileOutputStream out = new FileOutputStream(new File("G:\\Repo\\auto-multisite\\TestData\\test01.xlsx"));  
+		FileOutputStream out = new FileOutputStream(new File(filePath));  
 		wb.write(out);
 		out.close();
 		}
@@ -212,7 +214,7 @@ public class TrivagoPage {
 			String name = appLibrary.findElement(searchedHotel).getText();
 			URL url = new URL ("http://imgcy.trivago.com/c_lfill,d_dummy.jpeg,e_sharpen:60,f_auto,h_450,q_auto,w_450/itemimages/16/39/1639371_v4.jpeg");
 			image = ImageIO.read(url);
-			ImageIO.write(image, "png", new File("G:\\Repo\\auto-multisite\\TestData", name + ".png"));
+			ImageIO.write(image, "png", new File(imagePath, name + ".png"));
 		}catch(IOException e) {
 			
 		}

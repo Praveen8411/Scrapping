@@ -30,8 +30,9 @@ public UpworkPage(AppLibrary appLibrary) throws IOException {
 	this.appLibrary = appLibrary;
 }
 	
-	public void searchFreeLancers(String name) {
-		appLibrary.findElement(searchField).sendKeys(name);
+	public void searchFreeLancers(String name) throws Exception {
+		appLibrary.waitForElementVisible(appLibrary.findElement(searchField), 60);
+		appLibrary.enterText(searchField, name);
 		appLibrary.findElement(searchIcon).click();
 		
 	}
