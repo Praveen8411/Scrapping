@@ -1,4 +1,4 @@
-package com.multisite.PageObject;
+package com.scrapping.PageObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,8 +8,7 @@ import java.util.Random;
 
 import org.openqa.selenium.WebElement;
 
-import com.multisite.Library.AppLibrary;
-import com.sun.beans.introspect.PropertyInfo.Name;
+import com.scrapping.Library.AppLibrary;
 
 public class UpworkPage {
 	

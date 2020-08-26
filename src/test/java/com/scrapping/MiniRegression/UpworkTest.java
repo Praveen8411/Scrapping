@@ -1,11 +1,11 @@
-package com.multisite.MiniRegression;
+package com.scrapping.MiniRegression;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.multisite.Library.AppLibrary;
-import com.multisite.Library.TestBase;
-import com.multisite.PageObject.UpworkPage;
+import com.scrapping.Library.AppLibrary;
+import com.scrapping.Library.TestBase;
+import com.scrapping.PageObject.UpworkPage;
 
 public class UpworkTest extends TestBase {
 	
@@ -17,11 +17,6 @@ public class UpworkTest extends TestBase {
 		// Get the AppLibrary Object which is used to call the methods
 		appLibrary = new AppLibrary("UpworkTest");
 		up = new UpworkPage(appLibrary);
-		//mePage = new MyEventsPage(appLibrary);
-		// = "https://eclipse.qa6.pqe.io/dashboard";
-		//account = "QA Test Account";
-		//eventName = "Test Event" + AppLibrary.getRandomNumberString("");
-		//editEventName = "Edit " + eventName;
 		domainName = "QA";
 	}
 	

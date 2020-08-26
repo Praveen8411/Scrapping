@@ -1,4 +1,4 @@
-package com.multisite.MiniRegression;
+package com.scrapping.MiniRegression;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,9 +6,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.multisite.Library.AppLibrary;
-import com.multisite.Library.TestBase;
-import com.multisite.PageObject.TrivagoPage;
+import com.scrapping.Library.AppLibrary;
+import com.scrapping.Library.TestBase;
+import com.scrapping.PageObject.TrivagoPage;
 
 public class TrivagoTest extends TestBase {
 	

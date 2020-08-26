@@ -1,4 +1,4 @@
-package com.multisite.PageObject;
+package com.scrapping.PageObject;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -17,7 +17,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import com.multisite.Library.AppLibrary;
+import com.scrapping.Library.AppLibrary;
 
 public class TrivagoPage {
 
